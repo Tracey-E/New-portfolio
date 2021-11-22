@@ -1,0 +1,143 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: rgb(191, 201, 206);
+  }
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  header .row,
+  footer .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  a {
+    padding: 0 20px;
+    margin: 0;
+    color: rgb(9, 9, 129);
+    font-size: 1.2rem;
+  }
+  a:hover,
+  a:active {
+      background-color: rgb(179, 240, 218);
+      border: 2px solid black;
+  }
+  
+  .jumbotron {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    background-image: url('assets/raychel-sanner-1cJXplTxrmI-unsplash.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #0e0d0d;
+    height: 400px;
+    text-shadow: 4px 4px   rgb(247, 238, 238);
+    
+  }
+  
+  .jumbotron h2 {
+    font-size: 70px;
+    font-weight: 800;
+    margin: 0;
+    color: #0c0b0b ;
+    text-shadow: 4px 4px #acc2f5;
+    border: 1px solid black;
+    background-color:rgb(146, 161, 175);
+  }
+  
+  .jumbotron h3 {
+    margin: 0 0 20px;
+    color: #ece1e1;
+    text-shadow: 2px 2px   #0c0c0c;
+    font-weight: 500;
+  }
+  
+  section .row img {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+  
+  .col-md-6 {
+    margin: 0 0 30px;
+  }
+  
+  .btn.btn-primary {
+    border-radius: 2px;
+    border: 0px;
+    color: #fbd1d5;
+    background-color: #ffffff;
+  }
+  
+  .btn.btn-primary:hover {
+    color: #ffffff;
+    background-color: #fbd1d5;
+  }
+  
+  .btn-secondary {
+    background-color: #2a70e0;
+    color: #ffffff;
+    margin: 0 0 30px;
+  }
+  
+  .portrait {
+    width:  350px;
+    height: 300px;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  figure {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    font-size: 15px;
+    padding: 20px 0;
+  }
+  
+  footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  #photo{
+      display:flex;
+      align-self: flex-end;
+      font-size: 0.7rem;
+      float: right;
+
+  }
+  #photo a {
+    font-size: 0.7rem; 
+  }
+  #cards{
+      margin-top: 2rem;
+      font-size: 1.5rem;
+      color:blue;
+  }
+  #mxdMessages{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color:blue;
+    margin-bottom: 5rem;
+}
+ 
