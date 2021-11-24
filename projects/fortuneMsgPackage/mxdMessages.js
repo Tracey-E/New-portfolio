@@ -48,7 +48,7 @@
     alert(` ${ time()} ${ generateWho()}  ${ outcome()} `);
 }
 
-mxdMessages()
+
 
      
 
