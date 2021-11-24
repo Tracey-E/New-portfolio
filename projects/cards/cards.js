@@ -225,11 +225,11 @@ function stick(e) {
     } else if (comp > 21) {
          alert(" The computer bust You win")
     }else if (totalHandValue() > comp) {
-        alert("You Win your score is  " + total1 + " computer score is " + comp);
+        alert("You Win your score is  " + total1 + ". The computers score is " +  comp);
     } else if (comp > total1 ) {
-        alert("the computer wins there score is  " + comp + " your score is" + total1);
+        alert("The computer wins their score is  " + comp + ". your score is " + total1);
     } else {
-        alert("its a draw your score is " + total1 + " there score is " + comp);
+        alert("Its a draw your score is " + total1 + " the computers score is  " +  comp);
     }
 }
 // to change value of ace and its button to show value
@@ -388,8 +388,8 @@ function level(e) {
     if(snapButto.innerText ===  "Click to start your game"){
         snapButto.innerText = " Now click next card , snap or new game"
     }
-    userCards.innerText= "  your  card  count is   \n "  + ( split1.length  )   
-    cCard.innerText= " computer card count is    \n" + ( split2.length )
+    userCards.innerText= "  Your  card  count is   \n "  + ( split1.length  )   
+    cCard.innerText= " Computer's card count     \n" + ( split2.length )
 
     player1Cards.push(split1);
     computerCards.push(split2);
@@ -422,8 +422,8 @@ function nextCard(e) {
        userPlayerCards.replaceChildren(card1.GetHTML());
        compPlayerCards.replaceChildren(card2.GetHTML()); 
 
-        userCards.innerText= "  your  card  count is  \n  " + (player1Cards[0].length )   
-        cCard.innerText= " computers card count is   \n " + (computerCards[0].length )
+        userCards.innerText= "  Your  card  count is  \n  " + (player1Cards[0].length )   
+        cCard.innerText= " Computer's card count is   \n " + (computerCards[0].length )
 
          usedCards.push(card1);
         usedCards.push(card2);
@@ -489,7 +489,7 @@ function snaps(e) {
    userPlayerCards.replaceChildren();
    compPlayerCards.replaceChildren()
 }  else{
-    alert (' sorry  those  numbers dont match click Next Card to continue your game' )
+    alert (' Sorry  those  numbers dont match click Next Card to continue your game' )
 }
 }
 
