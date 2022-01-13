@@ -1,183 +1,180 @@
-    @media only screen and (min-width:320px)and( max-width:640px) {
-        * {
-            background-color: rgb(4, 58, 4);
-            font-size: 1em;
-        }
-    }
-    
-    * {
-        background-color: rgb(19, 109, 19);
-        font-size: 16px;
-        overflow: auto;
-        width: 100%;
-        user-select: none;
-        margin: 0%;
-    }
-    
-    h1 {
-        font-size: 2.5em;
-        text-align: center;
-        margin-top:2em;
-    }
-   
-    nav{
-        display: flex;
-        width:98%;
-        height:9em;
-        border: 5px solid black;
-       
-        margin-top:2em;
-        align-self: center;
-    }
-    nav ol { 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-       
-    }
-    
-    nav li a {
-        display: inline-flex;
-        font-size: 1.9em;
-        margin: auto;
-        
-        text-align: center;
-        text-decoration: underline;
-        cursor:pointer;
-       
-        color: #000000;
-        font-weight: bolder;
-       width:4em;
-    }
-    a:hover,
-    a:active {
-        
-        background-color: rgb(245, 245, 180);
-        border: 0.1px solid blue;
-        text-align: center;
-        line-height: 1.5em;
-        font-size: 1.9em;
-        align-content: center;
-        
-        
-    }
-    
-    .pontoon {
-        margin-top: 1em;
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        grid-template-rows: 5em 15em 5em 5em;
-        text-align: center;
-        column-gap: 2em;
-        row-gap: 2em;
-        margin-right: auto;
-        align-items: center;
-        justify-content: center;
-        padding-bottom: 2.5em;
-        height: 40em;
-        position: static;
-    }
-    
-    h2 {
-        grid-area: 1/1/2/5;
-        margin-top: 3.5em;
-        font-size: 1.9em;
-        text-align: center;
-    }
-    p {
-        grid-area: 2/1/3/5;
-        display: inline;
-        font-size: 1.7em;
-        font-weight: bolder;
-        text-align: center;
-    }
-    
-    .play {
-        grid-area: 3/1/4/2;
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    
-    
-    .stick {
-        grid-area: 3/3/4/4;
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .twist {
-        grid-area: 3/2/4/3;
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .game {
-        grid-area: 3 /4/4/5;
-        font-size: 2.3em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-    }
-    
-    .ace:hover,
-    .play:hover,
-    .stick:hover,
-    .twist:hover,
-    .game:hover,
-    .twist:active,
-    .stick:active,
-    .game:active {
-        background-color: rgb(236, 236, 213);
-        border: 0.2em solid rgb(183, 226, 26);
-        text-align: center;
-        flex-flow: row;
-    }
-    
-    .gridItem {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 0em;
-        margin-top: 0em;
-        grid-area: 5/1/6/5;
-    }
-    
-    #card {
-        display: flex;
-        grid-area: 1/1 /2/2;
-        height: 6.5em;
-        width: 5em;
-        border: 2px solid #151718;
-        border-radius: 0.5em;
-        font-family: courier;
-        font-size: 2em;
-        text-align: center;
-        margin-bottom: 2em;
-        margin-top: 0em;
-        float: left;
-    }
-    
-    .number {
-        font-size: 2em;
-        color: black;
-        background-color: antiquewhite;
-        height: 100%;
-        width: 100%;
-    }
-    
-    .suit {
-        display: flex;
-        font-size: 4em;
-        background-color: antiquewhite;
-        height: 100%;
-        width: 100%;
-    }
-    
-    /*.color:suit {
+@media only screen and (min-width: 320px) and( max-width:640px) {
+  * {
+    background-color: rgb(4, 58, 4);
+    font-size: 1em;
+  }
+}
+
+* {
+  background-color: rgb(19, 109, 19);
+  font-size: 16px;
+  overflow: auto;
+  width: 100%;
+  user-select: none;
+  margin: 0%;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1rem;
+}
+
+nav {
+  display: flex;
+  width: 98%;
+  height: 9em;
+  border: 5px solid black;
+
+  margin-top: 2em;
+  align-self: center;
+}
+nav ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav li a {
+  display: inline-flex;
+  font-size: 1.9em;
+  margin: auto;
+
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+
+  color: #000000;
+  font-weight: bolder;
+  width: 4em;
+}
+a:hover,
+a:active {
+  background-color: rgb(245, 245, 180);
+  border: 0.1px solid blue;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.9em;
+  align-content: center;
+}
+
+.pontoon {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 5em 15em 5em 5em;
+  text-align: center;
+  column-gap: 2em;
+  row-gap: 2em;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2.5em;
+  height: 40em;
+  position: static;
+}
+
+.pontoon h2 {
+  grid-area: 1/1/2/5;
+  margin-top: 3.5em;
+  font-size: 1.9em;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+.pontoon p {
+  grid-area: 2/1/3/5;
+  display: inline;
+  font-size: 1.8em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.play {
+  grid-area: 3/1/4/2;
+  font-size: 2.3em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+}
+
+.stick {
+  grid-area: 3/3/4/4;
+  font-size: 2.3em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+}
+
+.twist {
+  grid-area: 3/2/4/3;
+  font-size: 2.3em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+}
+
+.game {
+  grid-area: 3 /4/4/5;
+  font-size: 2.3em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+}
+
+.ace:hover,
+.play:hover,
+.stick:hover,
+.twist:hover,
+.game:hover,
+.twist:active,
+.stick:active,
+.game:active {
+  background-color: rgb(236, 236, 213);
+  border: 0.2em solid rgb(183, 226, 26);
+  text-align: center;
+  flex-flow: row;
+}
+
+.gridItem {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 0em;
+  margin-top: 0em;
+  grid-area: 5/1/6/5;
+}
+
+#card {
+  display: flex;
+  grid-area: 1/1 /2/2;
+  height: 6.5em;
+  width: 5em;
+  border: 2px solid #151718;
+  border-radius: 0.5em;
+  font-family: courier;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 0em;
+  float: left;
+}
+
+.number {
+  font-size: 2em;
+  color: black;
+  background-color: antiquewhite;
+  height: 100%;
+  width: 100%;
+}
+
+.suit {
+  display: flex;
+  font-size: 4em;
+  background-color: antiquewhite;
+  height: 100%;
+  width: 100%;
+}
+
+/*.color:suit {
         color: rgb(224, 26, 26);
     }
     
@@ -192,179 +189,616 @@
     .suit span ♠ ♣ {
         color: rgb(10, 2, 2);
     }*/
-    
-    
-    
-    .ace {
-        display: flex;
-        background-color: rgb(29, 122, 83);
-        grid-area: 4/1/5/5;
-        justify-content: center;
-        font-size: 2em;
-    }
-    .col{
-        display:none;
-    }
-    .col red{
-        color: red;
-    }
-    
-    .col black{
-        color: black;
-    }
-    /*h n d= \2665,\2666 cns =\2663,\2660*  ♠ ♣ ♥ ♦/
+
+.ace {
+  display: flex;
+  background-color: rgb(29, 122, 83);
+  grid-area: 4/1/5/5;
+  justify-content: center;
+  font-size: 2em;
+}
+.col {
+  display: none;
+}
+.col red {
+  color: red;
+}
+
+.col black {
+  color: black;
+}
+/*h n d= \2665,\2666 cns =\2663,\2660*  ♠ ♣ ♥ ♦/
 
     /*start of snap styles*/
-    
-    .snap {
-        display:grid;
-        grid-template-columns:  30% 35% 30%;
-        grid-template-rows: 6em 12em 5em 8em 20em 10em;
-        width:100%;
-       
-    }
-    .snap h2{
-        text-align: center;
-        grid-area: 1/1/2/4;
-        font-size: 2em;
-        color:black;
-        margin-top:1em;
-        font-weight: bolder;
-    }
-    .snap p{
-        grid-area:2/1/3/4 ;
-        font-size: 1.7em;;
-        font-weight: bolder;
-    }
-    .playGame {
-        grid-area: 4 /1/5/2;
-        font-size: 1.5em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-        font-weight: bolder;
-    }
-    .nextCard {
-        grid-area: 4 /2/5/3;
-        font-size: 1.5em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-        font-weight: bolder;
-    }
-    .snaps{
-        grid-area: 6/2/7/3;
-        font-size: 2em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-        font-weight: bolder;
-    }
-    .newgame {
-        grid-area: 4 /3/5/4;
-        font-size: 1.5em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-        font-weight: bolder;
-    }
-    .difficulty{
-     grid-area: 3/1/4/4;
-     font-size: 1.5em;
-        text-align: center;
-        border: 0.2em ridge #afd9ee;
-        font-weight: bolder;
-    }
-    .nextCard:hover,
-    .playGame:hover,
-    .snaps:hover,
-    .newgame:hover,
-    .difficulty:hover,
-    .nextCard:active,
-    .playGame:active,
-    .snaps:active 
-    .difficulty:active{
-        background-color: rgb(236, 236, 213);
-        border: 0.2em solid rgb(183, 226, 26);
-        text-align: center;
-        flex-flow: row;
-    }
-   .userPlayerCards{
-       grid-area: 5/2/6/3;
-        width:45%;
-        margin-left:2em;
-      
-   }
-   .compPlayerCards{
-    grid-area: 5/2/6/3;
-    margin-left:52%;
-    width:45%;
+
+.snap {
+  display: grid;
+  grid-template-columns: 30% 35% 30%;
+  grid-template-rows: 6em 12em 5em 8em 20em 10em;
+  width: 100%;
 }
-.newCard{
-    position: relative;
-    font-size: 1.7em;
-    text-align: center;
-    padding-top:49% ;
-    background-color: aliceblue;
-    height:20vh;
-    border:2px solid black;
-    border-radius: 5px;
-    width: 90%;
-    margin-top:1em;
+.snap h2 {
+  text-align: center;
+  grid-area: 1/1/2/4;
+  font-size: 2em;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bolder;
 }
-.newCard.red{
-    color:red;
+.snap p {
+  grid-area: 2/1/3/4;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  text-align: center;
 }
-.newCard,#text{
-    align-self: center;
+.playGame {
+  grid-area: 4 /1/5/2;
+  font-size: 1.5em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+  font-weight: bolder;
+}
+.nextCard {
+  grid-area: 4 /2/5/3;
+  font-size: 1.5em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+  font-weight: bolder;
+}
+.snaps {
+  grid-area: 6/2/7/3;
+  font-size: 2em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+  font-weight: bolder;
+}
+.newgame {
+  grid-area: 4 /3/5/4;
+  font-size: 1.5em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+  font-weight: bolder;
+}
+.difficulty {
+  grid-area: 3/1/4/4;
+  font-size: 1.5em;
+  text-align: center;
+  border: 0.2em ridge #afd9ee;
+  font-weight: bolder;
+}
+.nextCard:hover,
+.playGame:hover,
+.snaps:hover,
+.newgame:hover,
+.difficulty:hover,
+.nextCard:active,
+.playGame:active,
+.snaps:active .difficulty:active {
+  background-color: rgb(236, 236, 213);
+  border: 0.2em solid rgb(183, 226, 26);
+  text-align: center;
+  flex-flow: row;
+}
+.userPlayerCards {
+  grid-area: 5/2/6/3;
+  width: 45%;
+  margin-left: 2em;
+}
+.compPlayerCards {
+  grid-area: 5/2/6/3;
+  margin-left: 52%;
+  width: 45%;
+}
+.newCard {
+  position: relative;
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 49%;
+  background-color: aliceblue;
+  height: 20vh;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 1em;
+}
+.newCard.red {
+  color: red;
+}
+.newCard,
+#text {
+  align-self: center;
 }
 
 .newCard:before,
 .newCard:after {
-    position:absolute ;
-    content: attr(data-value);
-    font-size: 1.2em;
+  position: absolute;
+  content: attr(data-value);
+  font-size: 1.2em;
 }
 
-.newCard:before{
-    text-align: center;
-     top:.1em;
-     left:.1em;
+.newCard:before {
+  text-align: center;
+  top: 0.1em;
+  left: 0.1em;
 }
-.newCard:after{
-   bottom:.1em;
-   right:.1em; 
-   transform: rotate(180deg);
+.newCard:after {
+  bottom: 0.1em;
+  right: 0.1em;
+  transform: rotate(180deg);
 }
 
+.usercards {
+  grid-area: 5/1/6/2;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 10em;
+  height: 13em;
+  background: content-box
+    repeating-linear-gradient(
+      to top right,
+      rgb(131, 170, 185),
+      white 3px,
+      rgb(124, 21, 149) 2px
+    );
+  border-radius: 10px;
+  font-size: 1.5em;
 
-.usercards{
-       grid-area:5/1/6/2;
-       display: flex;
-       align-self: center;
-       justify-self: center;
-       justify-content: center;
-       text-align: center;
-       align-items: center;
-       width:10em;
-       height:13em;
-       background:content-box repeating-linear-gradient(to top right, rgb(131, 170, 185) , white 3px, rgb(124, 21, 149) 2px);
-       border-radius: 10px;
-       font-size: 1.5em;
-    
-       font-weight: bolder;
-    }
-.cCard{
-       grid-area: 5/3/6/4;
-       display: flex;
-       justify-content: center;
-       align-self: center;
-       justify-self: center;
-       text-align: center;
-       align-items: center;
-       width:10em;
-       height:13em;
-       background:content-box repeating-linear-gradient(to top right, rgb(131, 170, 185) , white 3px, rgb(124, 21, 149) 2px);
-       border-radius: 10px;
-       font-size: 1.5em;
-       
-       font-weight: bolder;
-   }
-   
-   
+  font-weight: bolder;
+}
+.cCard {
+  grid-area: 5/3/6/4;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+  width: 10em;
+  height: 13em;
+  background: content-box
+    repeating-linear-gradient(
+      to top right,
+      rgb(131, 170, 185),
+      white 3px,
+      rgb(124, 21, 149) 2px
+    );
+  border-radius: 10px;
+  font-size: 1.5em;
+
+  font-weight: bolder;
+}
+
+/** Clock styles */
+.clock {
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 1rem;
+}
+.clock h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.clock p {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.clockGrid {
+  display: grid;
+  position: static;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  max-height: 100vh;
+  grid-template-columns: 4% repeat(20, 3%);
+  column-gap: 0.5rem;
+  row-gap: 1rem;
+  margin: 10rem 0 0 0;
+  padding-bottom: 5%;
+  overflow: auto;
+  font-size: 1.6rem;
+}
+.begin {
+  grid-area: 2/1/4/4;
+  background-color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.newGame {
+  grid-area: 2/18/4/21;
+  background-color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.hand2 {
+  grid-area: 9/6/11/17;
+  background: linear-gradient(90deg, red 10%, transparent, transparent);
+  align-content: center;
+  justify-self: baseline;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 1.5rem;
+  width: 90%;
+}
+
+.turn {
+  background-color: white;
+  cursor: pointer;
+  height: 2rem;
+  font-size: 1.3rem;
+  border: 2px ridge black;
+  font-weight: bolder;
+  position: relative;
+  z-index: 4;
+  margin-top: 0%;
+}
+
+.turn:hover,
+.begin:hover,
+.newGame:hover {
+  background-color: #000000;
+  color: antiquewhite;
+  border: 2px solid white;
+}
+.circle {
+  grid-area: 2/2/19/20;
+  background-color: lightslategrey;
+  border-radius: 50%;
+  border: 5px ridge black;
+}
+
+.oneOClock {
+  grid-area: 3/13/5/15;
+
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  background-color: transparent;
+}
+.twoOClock {
+  grid-area: 5/16/7/18;
+
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+  background-color: transparent;
+}
+.threeOClock {
+  grid-area: 8/18/10/20;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.fourOClock {
+  grid-area: 11/16/13/18;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.fiveOClock {
+  grid-area: 13/13/15/15;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.sixOClock {
+  grid-area: 14/10/16/12;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.sevenOClock {
+  grid-area: 13/7/15/9;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.eightOClock {
+  grid-area: 11/4/13/6;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.nineOClock {
+  grid-area: 8/2/10/4;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.tenOClock {
+  grid-area: 5/4/7/6;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.elevenOClock {
+  grid-area: 3/7/5/9;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.twelveOClock {
+  grid-area: 2/10/4/12;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+.mid {
+  grid-area: 8/10/10/12;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/** face up cards */
+
+.oneOClockCard {
+  grid-area: 4/13/7/15;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.twoOClockCard {
+  grid-area: 6/16/9/18;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.threeOClockCard {
+  grid-area: 9/18/12/20;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fourOClockCard {
+  grid-area: 12/16/15/18;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fiveOClockCard {
+  grid-area: 14/13/17/15;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sixOClockCard {
+  grid-area: 15/10/18/12;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sevenOClockCard {
+  grid-area: 14/7/17/9;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.eightOClockCard {
+  grid-area: 12/4/15/6;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.nineOClockCard {
+  grid-area: 9/2/12/4;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.tenOClockCard {
+  grid-area: 6/4/9/6;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.elevenOClockCard {
+  grid-area: 4/7/7/9;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.twelveOClockCard {
+  grid-area: 3/10/6/12;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.midCard {
+  grid-area: 9/10/12/12;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/** styling cards */
+
+.newClockCard {
+  position: relative;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 35%;
+  background-color: aliceblue;
+  height: 5rem;
+  width: 100%;
+  outline: black outset medium;
+  contain: content;
+  margin-top: 1.9rem;
+}
+.newClockCard.red {
+  color: red;
+}
+.newClockCard,
+#text {
+  align-self: center;
+}
+
+.newClockCard:before,
+.newClockCard:after {
+  position: absolute;
+  content: attr(data-value);
+}
+
+.newClockCard:before {
+  text-align: center;
+  top: 0.1em;
+  left: 0.1em;
+}
+.newClockCard:after {
+  bottom: 0.2rem;
+  right: 0.1em;
+  transform: rotate(180deg);
+}
+
+/** pairsstyles start*/
+
+.pairs {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+  height:60rem;
+}
+.pairs h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+}
+.pairs p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.pairsGrid {
+  display: grid;
+  margin-top: 3rem;
+  
+  grid-template-columns: 6% 88% 6%;
+  width: 100%;
+  
+  cursor: pointer;
+}
+.tryCount{
+  grid-area:1/2/2/3;
+ margin-top: 3rem;
+  text-align: center;
+  align-content: center;
+  justify-content:last baseline;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.pairsStart {
+  grid-area: 1/1/2/2;
+  background-color: aliceblue;
+  border-radius: 5px;
+  height: 4rem;
+  width:100%;
+  cursor: pointer;
+}
+.pairsNewGame {
+  grid-area: 1/3/2/4;
+  background-color: aliceblue;
+  border-radius: 5px;
+  height: 4rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.pairsStart:hover,
+.pairsNewGame:hover {
+  background-color: #000000;
+  color: antiquewhite;
+}
+.pairsPlayingArea{
+  grid-area:2/1/6/4
+}
+.pairsBoard {
+  display: grid;
+  grid-template-columns: repeat(11, 8%);
+  grid-auto-flow: row;
+  row-gap: 0.5rem;
+  column-gap: 0.1rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  min-height: 95vh;
+ max-height: 100vh;
+overflow: hidden;
+  justify-content: center;
+}
+
+.cardBack {
+  background: linear-gradient(white, blue);
+  height: 7rem;
+  width: 6rem;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.newPairCard {
+  position: initial;
+
+  justify-self: center;
+  justify-content: flex-end;
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 35%;
+  background-color: aliceblue;
+  height: 7rem;
+  width: 6rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  contain: content;
+}
+.newPairCard.red {
+  color: red;
+}
+.newPairCard,
+#text {
+  align-self: center;
+}
+
+.newPairCard:before,
+.newPairCard:after {
+  position: absolute;
+  content: attr(data-value);
+}
+
+.newPairCard:before {
+  text-align: center;
+  top: 0.1em;
+  left: 0.1em;
+}
+.newPairCard:after {
+  bottom: 0.2rem;
+  right: 0.1em;
+  transform: rotate(180deg);
+}
+.neverGoingToSeeThis{
+  display:hidden;
+}

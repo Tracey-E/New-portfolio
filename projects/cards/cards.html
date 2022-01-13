@@ -19,7 +19,7 @@
                 <li><a href ="#pontoon">Pontoon</a></li>
                 <li><a href ="#clock">Clock</a></li>
                 <li><a href ="#snap">Snap</a></li>
-                <li><a href = "#solitaire">Solitaire</a></li>
+                <li><a href = "#pairs">Pairs</a></li>
             </ol>
         </nav>
     </header>
@@ -44,7 +44,6 @@
 
             <div class="gridItem" id="gridItem"></div>
 
-
         </container>
 
         <section>
@@ -68,7 +67,73 @@
                 <div class ="compPlayerCards"></div>
             </div>
         </section>
-        </section>
+            <section>
+                <div class="clock" id="clock">
+                    <h2>Clock</h2>
+                    <p>The goal in Clock is to fill all of the outer clock numbers before you get four kings in the center.<br> To start your game click Begin and then  the Turn button above the K(ing)<br> the red hand will show you which card to turn next.<br> if you find a king there will be no red line so use the turn button above the K(ing).<br>This game is best played at 80% zoom level</p>
+                 <div class="clockGrid">
+                    <div class="circle"></div>
+                    <button class="begin" id="begin" type ="button" onClick="begin()">Begin</button>
+                    <button class="newGame" id="newGame" type="button"onClick= "newGame()" >New game</button>
+                
+                 
+                                          
+                    
+                  <div class="oneOClock" id="turn"><button class="turn" id="one"  type ="button" onClick ="turn(this.id)">TURN</button>A</div>
+                    <div class="twoOClock" id ="turn"><button class="turn" id="two" type ="button" onClick ="turn(this.id)">TURN</button>2</div>
+                    <div class="threeOClock" id ="turn"><button class="turn"id="three"  type ="button" onClick ="turn(this.id)">TURN</button>3</div>
+                    <div class="fourOClock" id ="turn"><button class="turn"id="four"  type ="button" onClick ="turn(this.id)">TURN</button>4</div>
+                    <div class="fiveOClock" id ="turn"><button class="turn" id="five" type ="button" onClick = "turn(this.id)">TURN</button>5</div>
+                    <div class="sixOClock" id ="turn"><button class="turn"id="six" type ="button" onClick ="turn(this.id)">TURN</button>6</div>
+                    <div class="sevenOClock" id ="turn"><button class="turn" id="seven" type ="button" onClick= "turn(this.id)">TURN</button>7</div>
+                    <div class="eightOClock" id ="turn"><button class="turn" id="eight" type ="button" onClick="turn(this.id)">TURN</button>8</div>
+                    <div class="nineOClock" id ="turn"><button class="turn"id="nine"  type ="button" onClick="turn(this.id)">TURN</button>9</div>
+                    <div class="tenOClock" id ="turn"><button class="turn"id="ten" type ="button" onClick="turn(this.id)">TURN</button>10</div>
+                    <div class="elevenOClock" id ="turn"><button class="turn"id="J"  type ="button" onClick="turn(this.id)">TURN</button>J</div>
+                    <div class="twelveOClock" id ="turn"><button class="turn" id="Q" type ="button" onClick="turn(this.id)">TURN</button>Q</div>
+                    <div class="mid" id ="turn"><button class="turn" id="K" type ="button" onClick="turn(this.id)">TURN</button>K</div>
+                  
+                    <div class="oneOClockCard"></div>
+                    <div class="twoOClockCard"></div>
+                    <div class="threeOClockCard"></div>
+                    <div class="fourOClockCard"></div>
+                    <div class="fiveOClockCard"></div>
+                    <div class="sixOClockCard"></div>
+                    <div class="sevenOClockCard"></div>
+                    <div class="eightOClockCard"></div>
+                    <div class="nineOClockCard"></div>
+                    <div class="tenOClockCard"></div>
+                    <div class="elevenOClockCard"></div>
+                    <div class="twelveOClockCard"></div>
+                    <div class="midCard"></div>
+
+                    <div class ="hand1"></div>                                                 
+                    <div class ="hand2"></div>
+                    
+                 </div>
+                    </div>
+                </div>
+            </section>
+                <section>
+                    <div class="pairs" id="pairs">
+                        <h2>Pairs</h2>
+                        <p>The goal of Pairs is </p>
+                        <div class="pairsGrid"> 
+                        <button class="pairsStart" id="pairsStart" type="button" onclick="pairBegin()">Deal</button>
+                        <button class="pairsNewGame" id="newGame" type="button" onclick="newGame()">New Game</button>
+                        <div class="tryCount" id="tryCount">number of tries</div>
+                    <div class="pairsPlayingArea">    <div class="pairsBoard" id="pairsBoard"> 
+          
+                   </div>
+                   
+                    </div>
+                   
+                 </div>
+                 
+                </section>
+           
+         
+    
     </main>
     <footer>
 
