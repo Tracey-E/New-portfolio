@@ -32,7 +32,7 @@ toggle.addEventListener("click", () => {
   menu.classList.toggle("active");
 });
 
-/**background color JS*/
+/**background JS*/
 
 /**getting background elements  need to change */
 
