@@ -681,7 +681,7 @@ a:active {
   margin-top: 3rem;
   margin-bottom: 5rem;
   font-size: 1.5rem;
-  height:60rem;
+  height: 60rem;
 }
 .pairs h2 {
   font-size: 2rem;
@@ -697,18 +697,18 @@ a:active {
 .pairsGrid {
   display: grid;
   margin-top: 3rem;
-  
+
   grid-template-columns: 6% 88% 6%;
   width: 100%;
-  
+
   cursor: pointer;
 }
-.tryCount{
-  grid-area:1/2/2/3;
- margin-top: 3rem;
+.tryCount {
+  grid-area: 1/2/2/3;
+  margin-top: 3rem;
   text-align: center;
   align-content: center;
-  justify-content:last baseline;
+  justify-content: last baseline;
   font-size: 1.5rem;
   font-weight: bolder;
 }
@@ -718,7 +718,7 @@ a:active {
   background-color: aliceblue;
   border-radius: 5px;
   height: 4rem;
-  width:100%;
+  width: 100%;
   cursor: pointer;
 }
 .pairsNewGame {
@@ -735,8 +735,8 @@ a:active {
   background-color: #000000;
   color: antiquewhite;
 }
-.pairsPlayingArea{
-  grid-area:2/1/6/4
+.pairsPlayingArea {
+  grid-area: 2/1/6/4;
 }
 .pairsBoard {
   display: grid;
@@ -747,8 +747,8 @@ a:active {
   margin-bottom: 3rem;
   width: 100%;
   min-height: 95vh;
- max-height: 100vh;
-overflow: hidden;
+  max-height: 100vh;
+  overflow: hidden;
   justify-content: center;
 }
 
@@ -799,6 +799,6 @@ overflow: hidden;
   right: 0.1em;
   transform: rotate(180deg);
 }
-.neverGoingToSeeThis{
-  display:hidden;
+.neverGoingToSeeThis {
+  display: hidden;
 }
