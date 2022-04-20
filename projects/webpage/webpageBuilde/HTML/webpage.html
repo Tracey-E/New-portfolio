@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A page to show different webPage styles" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webpage Builder</title>
+    <!--- CSS --->
+    <link rel="stylesheet" href="../css/style.css" />
+   <!--- JS --->
+    <script defer src="../js/script.js"></script>
+  <!--- Favicon --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Courier+Prime:ital@1&family=Lobster&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <header >
+      <h1 id = "header">WEBPAGE BUILDER </h1>
+      
+
+    </header>
+<!---basic menu--->
+    <div id="menu" class="horizontal vertical slideout">
+      <button
+        aria-label="menu"
+        class="toggle"
+        id="toggle"
+        type="button"
+        >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul tabindex={-0} type="menu">
+        <li>I </li>
+        <li>AM</li>
+      <li>A</li>
+      <li>NAVBAR OR A MENU</li>
+      </ul>
+    </div>
+ <!---menu change option buttons-->
+    <div class="menuSelector">
+      <label for="menu-style-selector" id="menuSelector">Choose your menu style</h2>
+      <button id="horizontal" type="button" >
+        Horizontal
+      </button>
+      <button id="vertical" type="button" >
+        Vertical
+      </button>
+      <button id="slideout" type="button" >
+        Slide Out
+      </button>
+    </div>
+    <!--background color change options-->
+    <div class="backgroundSelector" id="backgroundSelector">
+      <label for="backgroundcolor-select" id="backgroundSelect">Choose your background color</label>
+      <option>
+        <ol>
+          <li>
+            <input type="radio" name="background" id="background" value="grey" />
+            <label for="grey">Grey</label>
+          </li>
+          <li>
+            <input type="radio" name="background" id="background"  value="lightBlue" />
+            <label for="light blue">Light Blue</label>
+          </li>
+          <li>
+            <input type="radio" name="background" id="background"  value="lightGreen" />
+            <label for="light green">Light Green</label>
+          </li>
+          <li>
+            <input type="radio" name="background" id="background"  value="yellow" />
+            <label for="yellow">Yellow</label>
+          </li>
+          <li>
+            <input type="radio" name="background" id="background"  value="violet" />
+            <label for="violet"> Violet</label>
+          </li>
+          <li>
+            <input type="radio" name="background" id="background"  value="white" />
+            <label for="white">White</label>
+          </li>
+        </ol>
+      </option>
+    </div>
+    <!--font change options-->
+    <div class="fontSelector" id = "fontSelector">
+      <label for="font-select" >Choose your font</label>
+      <select name="font" id="fonts">
+        <option name="font selector" value="">--Please choose a font--</option>
+        <option value="Anton">Anton</option>
+        <option value="CourierPrime">Courier Prime</option>
+        <option value="Lobster">Lobster</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+    </div>
+    <footer></footer>
+  </body>
+  
+</html>
