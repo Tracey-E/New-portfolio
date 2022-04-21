@@ -50,7 +50,7 @@ background.addEventListener("change", () => {
 
 /**getting font choices to change */
 let font = document.getElementById("fontSelector");
-let title = document.getElementById("header");
+let title = document.getElementById("userInteractions");
 
 font.addEventListener("change", () => {
   /**get user selected font from font option select */

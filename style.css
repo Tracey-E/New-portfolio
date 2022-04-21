@@ -131,10 +131,11 @@ footer ul {
 /*projects*/
 #cards {
   margin-top: 1rem;
+ margin-bottom: 2rem;
   font-size: 1.4rem;
   color: blue;
-  margin-bottom: 2rem;
 }
+
 #mxdMessages {
   margin-top: 1rem;
   font-size: 1.5rem;
