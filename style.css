@@ -3,7 +3,7 @@ body {
   background-color: rgb(191, 201, 206);
   overflow-y: auto;
 }
-
+/**----Header--- */
 header {
   padding: 20px 0;
 }
@@ -18,7 +18,7 @@ h1 {
   font-weight: 700;
   margin: 0;
 }
-
+/*----Navigation--- */
 nav {
   display: flex;
   justify-content: flex-end;
@@ -35,6 +35,7 @@ a:active {
   background-color: rgb(179, 240, 218);
   border: 2px solid black;
 }
+/*--- front page image ---*/
 
 .jumbotron {
   display: flex;
@@ -73,6 +74,7 @@ section .row img {
 .col-md-6 {
   margin: 0 0 30px;
 }
+/*---buttons--- */
 
 .btn.btn-primary {
   border-radius: 2px;
@@ -92,19 +94,7 @@ section .row img {
   margin: 0 0 30px;
 }
 
-.portrait {
-  width: 350px;
-  height: 300px;
-}
-
-figure img {
-  width: 100%;
-  height: auto;
-}
-
-figure {
-  margin-bottom: 30px;
-}
+/*---footer--- */
 
 footer {
   font-size: 15px;
@@ -130,9 +120,15 @@ footer ul {
   font-size: 0.7rem;
 }
 /*projects*/
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 #cards {
   margin-top: 1rem;
- margin-bottom: 2rem;
+  margin-bottom: 2rem;
   font-size: 1.4rem;
   color: blue;
 }
@@ -148,21 +144,20 @@ footer ul {
   font-size: 1.4rem;
   color: blue;
 }
-#diary{
+#diary {
   margin-top: 1rem;
   font-size: 1.4rem;
   color: blue;
 }
-#dunn{
+#dunn {
   margin-top: 1rem;
   font-size: 1.4rem;
   color: blue;
 }
-
-.row img.icons{
-  
-  width:20%;
-  height:10%;
+/**-- Experience icons --*/
+.row img.icons {
+  width: 20%;
+  height: 10%;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 2%;
@@ -170,14 +165,7 @@ footer ul {
 
   align-items: center;
 }
-#iconLink{
+#iconLink {
   font-size: medium;
- margin-right: 0%;
- 
-}
-
-#projects{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  margin-right: 0%;
 }
