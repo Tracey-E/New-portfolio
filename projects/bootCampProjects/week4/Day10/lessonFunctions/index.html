@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link type="text/css" rel="stylesheet" href="styles.css" />
+   <script defer src="script.js"></script>
+    <title>Cart</title>
+</head>
+<body>
+    <article class="container">
+        <div class="items">
+            <img width="100" src="../../Day9/shopingCartMyVersion/assets/item1.jpg" alt="biscuits"></div>
+        <article 
+          id="item"
+         data-name ="name"
+         data-summary ="summary"
+        data-price ="price"
+        data-quantity ="quantity"
+              data-ref="ref"
+        >
+        </article>
+        
+    </article>
+    <input onInput="showChange(this.value)" value="zxy"/>
+    <div id="valueBox"></div>
+
+   
+    <div id="change">This will change
+        <button type="button" onclick="color()">Click me </button>
+
+    </div>
+
+    <div id="inputs">
+        <input onchange="dataEntry(this)" name="quantity" type="number" id="input1" placeholder="quantity" />
+        <input onchange="dataEntry(this)" name="email" type="text" id="email"placeholder="Email"/>
+   <button class="submit" onClick="submit()">Submit</button>
+    </div>
+</body>
+</html>

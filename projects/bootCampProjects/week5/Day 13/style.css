@@ -1,0 +1,42 @@
+
+:root{
+
+    --pallette-color-1: #cd17e6  ;
+    --pallette-color-2: #bed637;
+    --pallette-color-3: #007bff;
+    --highlight-1:var(--pallette-color-1);
+    --highlight-2:var(--pallette-color-2);
+    --highlight-3:var(--pallette-color-3);
+    --fontWeight-1:bolder;
+}
+
+
+.body{
+    
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1{
+    text-align: center;
+    font-size:2em;
+    color: rgb(19, 17, 17);
+    text-shadow: 1px 2px rgb(224, 22, 22);
+    background-color: rgb(149, 241, 241);
+}
+
+h2{
+    color: var(--highlight-1);
+}
+h3{
+    color: var(--highlight-2);
+}
+
+p{
+    font-size: larger;
+    color: var(--highlight-3);
+    font-weight: var(--fontWeight-1);
+}
