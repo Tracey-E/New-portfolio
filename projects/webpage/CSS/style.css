@@ -222,7 +222,7 @@ h1 {
   justify-content: center;
   align-self: auto;
   width: 25%;
- 
+
   padding: 0.5em;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -237,7 +237,7 @@ h1 {
 
 .fontSelector {
   display: flex;
-
+flex-direction: column;
   align-content: center;
   justify-content: center;
   align-self: auto;
@@ -245,6 +245,14 @@ h1 {
   text-align: center;
   padding: 1em;
   margin: 4.5em;
+ 
+}
+.fontSelector h2{
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0em;
+  justify-self: flex-start;
+  align-self: flex-start;
 }
 .fontSelector select {
   display: flex;
@@ -309,4 +317,380 @@ h1 {
   background-position: center;
   text-align: center;
   font-size: 1.5em;
+}
+/** css animations */
+
+.css {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 1em;
+  margin: 1em;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 2em;
+
+  text-shadow: none;
+}
+
+
+/*-- letter come from right--*/
+.reveal {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 20em;
+  flex-direction: row;
+  margin-top: 1em;
+  background: linear-gradient(
+    45deg,
+    rgb(239, 0, 0) 30%,
+    rgb(255, 151, 0) 45%,
+    rgb(72, 201, 214) 66%
+  );
+}
+.shows {
+  position: absolute;
+  display: inline-block;
+  white-space: nowrap;
+  visibility: hidden;
+  animation: show 3s linear infinite normal;
+  width: inherit;
+  right: 50%;
+  overflow-x: hidden;
+  font-size: 2em;
+  text-shadow: 0px 0px 5px black;
+  opacity: 0;
+}
+.shows {
+  --animdur: 6s;
+  --animn: show;
+  --animdir: normal;
+  --animic: infinite;
+  animation-delay: 0;
+
+}
+
+.word-1 {
+  color: rgb(145, 236, 243);
+}
+.word-2 {
+  color: blue;
+}
+.word-3 {
+  color: darkorchid;
+}
+.word-4 {
+  color: chartreuse;
+}
+.word-5 {
+  color: rgb(238, 16, 219);
+}
+.word-6 {
+  color: rgb(197, 165, 20);
+}
+
+@keyframes show {
+  0% {
+    display: block;
+    visibility: hidden;
+    width: 0%;
+    right: 0;
+    text-shadow: 3px 3px 2px black;
+    opacity: 0.25;
+  }
+  50% {
+    width: 25%;
+    right: 15%;
+    font-size: 4em;
+    text-shadow: 5px 5px 1px black;
+    opacity: 0.5;
+  }
+  80% {
+    width: 70%;
+    right: 25%;
+    text-align: center;
+    visibility: visible;
+    font-size: 6em;
+    text-shadow: 7px 7px 0px black;
+    opacity: 1;
+  }
+
+  100% {
+    width: 70%;
+    right: 25%;
+    text-align: center;
+    visibility: visible;
+    font-size: 6em;
+    text-shadow: 7px 7px 0px black;
+    opacity: 1;
+  }
+}
+/*-- letters come from above--*/
+.shooting-star {
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+  height:30em;
+  width: 90%;
+}
+
+
+:root {
+  --text-shadow: 0px -5px 5px rgb(224, 209, 209),
+    0px -60px 70px rgb(185, 180, 180), 0px -51px 45px rgb(224, 209, 209),
+    0px -43px 60px rgb(138, 135, 135), 0px -30px 35px rgb(224, 209, 209),
+    0px -25px 50px rgb(223, 196, 196), 0px -20px 25px rgb(224, 209, 209),
+    0px -17px 40px rgb(252, 175, 175), 0px -8px 15px rgb(224, 209, 209),
+    0px -32px 25px rgb(247, 218, 218);
+}
+
+[data-animation-pause]:checked ~ [data-animation] {
+  animation-play-state: paused;
+}
+.css .shooting-star .star{
+  width:100%;
+  height:5em;
+  position: absolute;
+  animation-delay: 0;
+}
+.star {
+  --animdur: 6s;
+  --animn: shooting-star;
+  --animdir: normal;
+  --animic: infinite;
+  animation-delay: 0;
+
+}
+.s {
+  color: orange;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+  top: 0;
+  left: 20%;
+}
+.h {
+  color: magenta;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+  top: 0;
+  left: 25%;
+}
+.o {
+  color: lightseagreen;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 30%;
+}
+.t {
+  color: lawngreen;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 35%;
+}
+.i {
+  color: gold;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 40%;
+}
+.n {
+  color: darkkhaki;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 45%;
+}
+.g {
+  color: darkmagenta;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 50%;
+}
+.s2 {
+  color: chartreuse;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 60%;
+}
+.t2 {
+  color: blue;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 65%;
+}
+.a {
+  color: crimson;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 70%;
+}
+.r {
+  border-radius: 50%;
+
+  color: aqua;
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 75%;
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translate(0, 0);
+    top: 0;
+    font-size: 0.5em;
+  }
+  25% {
+    transform: translate(0, 0);
+    top: +25%;
+    font-size: 1em;
+   
+    
+  }
+  50% {
+    transform: translate(0, -10px);
+    top: +55%;
+    font-size: 2em;
+  
+    
+  }
+  75% {
+    top: +85%;
+    text-shadow: none;
+    font-size: 4em;
+    animation-delay: 5s;
+    
+  }
+  100% {
+    top: +85%;
+    text-shadow: none;
+    font-size: 4em;
+    animation-delay: 5s;
+   
+  
+  }
+}
+
+/**-- star background--**/
+
+.stars {
+  width: 90%;
+  height:20em;
+  color: blue;
+  margin:1em;
+  background-color: black;
+  background-image: radial-gradient(
+      rgb(228, 151, 7),
+      rgba(255, 255, 255, 0.2) 3px,
+      transparent 40px
+    ),
+    radial-gradient(red, rgba(255, 255, 255, 0.15) 2px, transparent 30px),
+    radial-gradient(
+      rgb(25, 88, 223),
+      rgba(255, 255, 255, 0.15) 2px,
+      transparent 30px
+    ),
+    radial-gradient(
+      rgb(130, 14, 207),
+      rgba(255, 255, 255, 0.1) 5px,
+      transparent 40px
+    ),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 3px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, -3px 18px, 14px -63px, -40px 60px;
+}
+p {
+  font-size: 3em;
+}
+/*-- bounce animation--*/
+.header {
+  padding: 1rem;
+  height: 10rem;
+  background: linear-gradient(rgb(240, 50, 50), white, rgb(41, 41, 248));
+  text-align: center;
+width:100%;
+  overflow-y: hidden;
+}
+.name {
+  font-family: "Press Start 2P", cursive;
+  margin-top: 0.5rem;
+ 
+  align-self: center;
+  text-align: left;
+}
+.header h2{
+font-size: 3em;
+}
+
+.chk {
+  width: 5rem;
+  margin-top: 0rem;
+  font-weight: bolder;
+}
+.hidden {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(1px);
+}
+.a-bounce {
+  --animdur: 2s;
+  --animn: bounce;
+  --animdir: alternate-reverse;
+  --animic: infinite;
+}
+
+[data-animation] {
+  animation: var(--animn, none) var(--animdur, 0s) var(--animtf, linear)
+    var(--animdel, 0s) var(--animic, infinite) var(--animdir, alternate)
+    var(--animfm, none) var(--animps, running);
+}
+[data-animation-pause]:checked ~ [data-animation] {
+  --animps: paused;
+}
+[data-animation-pause]:checked + label::before {
+  background-color: cornflowerblue;
+}
+
+@keyframes bounce {
+  from {
+    margin-top: 0.5%;
+  }
+  0% {
+    color: blue;
+    opacity: 100%;
+  }
+  50% {
+    color: rgb(10, 10, 10);
+    opacity: 90%;
+  }
+  100% {
+    color: rgb(240, 50, 50);
+    opacity: 80%;
+    margin-top: 8%;
+  }
 }
