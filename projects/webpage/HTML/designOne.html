@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/d1.css" />
+    <script src="../js/ds1.js"></script>
+    <title>Design One</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" alt=" logo" src="../../../assets/Star_icon_1.png" />
+
+      <div id="menu">
+        <ul tabindex="{-0}" type="menu">
+          <li><a href="webpage.html" target="_blank">Home</a></li>
+          <li><a href="designTwo.html" target="_blank">Design Two</a></li>
+          <li><a href="designThree.html" target="_blank">Design Three</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="text">
+        <input
+          type="checkbox"
+          data-animation-pause
+          id="css-toggle"
+          class="hidden"
+        />
+        <label htmlFor="css-toggle" class="chk">Toggle animations</label>
+
+        <h2 class="shows" data-animation="stop">
+          All styles and colours will be your choice
+        </h2>
+      </div>
+      <div class="main-content">
+        <div id="outer-container">
+          <div id="inner-container">
+            <button type="button" onclick="prev()" id="prev">&lt;</button>
+
+            <p id="item1" class="one active">
+              Your photos could be displayed here.<br />
+              Keep clicking to see more ideas
+            </p>
+            <p id="item2" class="two">Or you could use customer Testimonials</p>
+            <p id="item3" class="three">Or what about latest news</p>
+            <p id="item4" class="four">
+              You could also use this on auto scroll
+            </p>
+
+            <button type="button" onclick="next()" id="next">&gt;</button>
+            <p>count : <span id="count">1 </span> of 4</p>
+          </div>
+        </div>
+        <div class="text-two">
+          <h3 >
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            recusandae dolorum possimus dicta praesentium aut ex architecto
+            excepturi consequuntur, magnam porro facere ab totam odio at,
+            accusamus repudiandae inventore asperiores?'
+          </h3>
+        </div>
+      </div>
+    
+    </main>
+    <footer>
+      <h2>Contact me on</h2>
+    <h2>Email:: traceye5@aol.com</h2>
+  </footer>
+  </body>
+</html>

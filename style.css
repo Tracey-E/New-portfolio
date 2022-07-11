@@ -187,6 +187,7 @@ width:100%;
 flex-direction: row;
 height:30%;
 text-shadow: none;
+background-color: #e2d9d9;
 
 }
 
@@ -210,6 +211,9 @@ text-shadow: none;
   height: 100%;
  
   
+}
+.backGround{
+  background-color: #ece3e3;
 }
 
 
