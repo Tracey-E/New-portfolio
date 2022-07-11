@@ -524,13 +524,21 @@ flex-direction: column;
   top: 0;
   left: 30%;
 }
+.o2 {
+  color: rgb(128, 189, 168);
+  position: absolute;
+  text-shadow: var(--text-shadow);
+
+  top: 0;
+  left: 35%;
+}
 .t {
   color: lawngreen;
   position: absolute;
   text-shadow: var(--text-shadow);
 
   top: 0;
-  left: 35%;
+  left: 40%;
 }
 .i {
   color: gold;
@@ -538,7 +546,7 @@ flex-direction: column;
   text-shadow: var(--text-shadow);
 
   top: 0;
-  left: 40%;
+  left: 45%;
 }
 .n {
   color: darkkhaki;
@@ -546,7 +554,7 @@ flex-direction: column;
   text-shadow: var(--text-shadow);
 
   top: 0;
-  left: 45%;
+  left: 48%;
 }
 .g {
   color: darkmagenta;
@@ -554,7 +562,7 @@ flex-direction: column;
   text-shadow: var(--text-shadow);
 
   top: 0;
-  left: 50%;
+  left: 53%;
 }
 .s2 {
   color: chartreuse;
