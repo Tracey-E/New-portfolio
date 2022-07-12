@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css,npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-skyblue.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
+  
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Shade&display=swap" rel="stylesheet">
+   <link
+   rel="stylesheet"
+   href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+   integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+   crossorigin="anonymous"
+ />
+ <link rel="stylesheet" href="style.css">
+   <script defer src="./projects/webpage/js/ds2.js" ></script>
+  
+  <script defer>
+       
+    document.addEventListener( 'DOMContentLoaded', function () {
+new Splide('#image-carousel', {
+    label: 'My Certificates',
+  heightRatio: 1,
+ autoplay: Boolean,
+  type:'loop',
+  rewind:true,
+  speed: number= 1
+}).mount()
+
+
+})
+
+
+
+
+
+    </script>
+    <title>certificates</title>
+</head>
+<body>
+  <header class="container">
+    <div class="row">
+      <h1 class="col-sm-6">Tracey Edwards</h1>
+      <nav class="col-sm-6 text-right">
+        <a href="index.html">Home </a>
+        <a href="about.html">About </a>
+        <a href="experience.html"> Experience </a>
+       
+        <a href="projects.html"> Projects </a>
+      </nav>
+    </div>
+  </header>
+    <div class="certs">
+        <h1>My certificates from CodeCademy</h1>
+      
+  <div class="splide" role="group" id="image-carousel" aria-label="Splide Basic HTML Example"  >
+        <button id="play-pause" class="splide__toggle" type="button" >
+           <span class="splide__toggle__play">Play</span>
+           <span class="splide__toggle__pause">Pause</span>
+        </button>
+       <div class="splide__progress">
+        <div class="splide__progress__bar">
+        </div>  
+       </div>
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide" ><img class="certImage one" src="./assets/certificates/Screenshot (10).png" alt=""></img></li>
+                  <li class="splide__slide"><img  class="certImage two" src="./assets/certificates/Screenshot (20).png" alt=""></img></li>
+                  <li class="splide__slide"><img class="certImage three" src="./assets/certificates/Screenshot (21).png" alt=""></img></li>
+                  <li class="splide__slide"><img class="certImage four" src="./assets/certificates/Screenshot (22).png" alt=""></img></li>
+                  <li class="splide__slide"><img class="certImage five" src="./assets/certificates/Screenshot (60).png" alt=""></img></li>
+                  <li class="splide__slide"><img class="certImage six" src="./assets/certificates/Screenshot (33).png" alt=""></img></li>
+                  <li class="splide__slide"><img class="certImage seven" src="./assets/certificates/Screenshot (34).png" alt=""></img></li>
+                  <li class="splide__slide"><img class="certImage eight" src="./assets/certificates/Screenshot (43).png" alt=""></img></li>
+              </ul>
+        </div>
+  </div>
+    </div>
+    <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">&copy;  Tracey Edwards</p>
+        <h5 class="col-sm-4">traceye5@aol.com</h5>
+        <div class="col-sm-4">
+          <a href="https://github.com/Tracey-E">Github</a>
+        </div>
+        <div class="col-sm-4" id="photo">
+          Photo by
+          <a
+            href="https://unsplash.com/@raychelsnr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Raychel Sanner</a
+          >
+          on
+          <a
+            href="https://unsplash.com/s/photos/stormy-sky-lightning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
